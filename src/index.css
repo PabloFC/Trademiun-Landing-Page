@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+
+@layer base {
+  html {
+    font-family: "Raleway", sans-serif;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+.input-error {
+  border: 1px solid red;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+  text-align: left;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+/* Traders Carousel */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.cards {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.cards:hover .cards-slide {
+  animation-play-state: paused;
+}
+
+.cards-slide {
+  width: 100%;
+  animation: 6s slide infinite linear;
+  display: flex;
+}
+
+/* comando para ver cambios 
+  npx tailwindcss -i ./src/input.css -o ./src/output.css --watch  */
