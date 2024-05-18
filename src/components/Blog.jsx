@@ -4,11 +4,11 @@ import imgBlogPeq from "../assets/img/landing/imgBlogPeq.png";
 
 const Blog = () => {
   return (
-    <section className="py-4">
+    <section className="py-4" id="blog">
       <h2 className="text-center text-3xl font-bold mb-20">
         Últimos artículos
       </h2>
-      <div className=" flex flex-col sm:flex-row mx-auto justify-center">
+      <div className="flex flex-col sm:flex-row mx-auto justify-center">
         <div className="w-full mb-4 basis-1/2 border-2 border-solid rounded-xl">
           <div>
             <img src={imgBlogGrande} className="w-full " alt="grafica" />

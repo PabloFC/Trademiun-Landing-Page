@@ -8,41 +8,44 @@ const Nav = () => {
         <img src={logo} alt="Logo Trademiun" />
       </Navbar.Brand>
       <div className="flex md:order-2 xl:mr-40 ">
-        <Button color="gray" className="!text-primario hidden xl:flex lg:mr-2">
+        <Button
+          color="gray"
+          className="!text-primario hidden xl:flex lg:mr-2 !ring-0"
+        >
           Login
         </Button>
-        <Button className="bg-primario hover:!bg-secundario mr-2">
+        <Button className="bg-primario hover:!bg-secundario mr-2 !ring-0">
           Regístrate
         </Button>
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
         <Navbar.Link
-          href="#"
+          href="#blog"
           className="hover:!text-secundario text-stone-950 text-md font-bold"
         >
           Blog
         </Navbar.Link>
         <Navbar.Link
-          href="#"
+          href="#sobreNosotros"
           className="hover:!text-secundario text-stone-950 text-md font-bold"
         >
           Sobre Nosotros
         </Navbar.Link>
         <Navbar.Link
-          href="#"
+          href="#contacto"
           className="hover:!text-secundario text-stone-950 text-md font-bold"
         >
           Contacto
         </Navbar.Link>
         <Navbar.Link
-          href="#"
+          href="#trader"
           className="hover:!text-secundario text-stone-950 text-md font-bold"
         >
           Conviertete en trader
         </Navbar.Link>
         <Navbar.Link
-          href="#"
+          href="#faqs"
           className="hover:!text-secundario text-stone-950 text-md font-bold"
         >
           FAQS

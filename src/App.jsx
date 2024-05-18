@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <Nav />
-      <div className="mb-20 ">
+      <div className="mb-20">
         <Header />
       </div>
       <div className="mb-20">
@@ -27,7 +27,10 @@ function App() {
       </div>
 
       <div>
-        <h2 className="xl:flex justify-center text-center text-4xl font-bold mb-20 ">
+        <h2
+          className="xl:flex justify-center text-center text-4xl font-bold mb-20"
+          id="sobreNosotros"
+        >
           Sobre Nosotros
         </h2>
       </div>

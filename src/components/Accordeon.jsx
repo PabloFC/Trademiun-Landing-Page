@@ -2,7 +2,7 @@ import { Accordion } from "flowbite-react";
 
 const Accordeon = () => {
   return (
-    <section>
+    <section id="faqs">
       <h2 className="text-center text-3xl font-bold mb-20">
         Preguntas Frecuentes
       </h2>

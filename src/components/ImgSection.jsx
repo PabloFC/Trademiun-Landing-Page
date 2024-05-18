@@ -29,9 +29,12 @@ const ImgSection = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row  ">
-        <div className="w-full basis-2/4 xl:px-12 lg:p-6 order-2 md:order-1 bg-gray-100  ">
+        <div
+          className="w-full basis-2/4 xl:px-12 lg:p-6 order-2 md:order-1 bg-gray-100 "
+          id="contacto"
+        >
           <h2 className="text-2xl mb-4 px-2 font-bold mt-2 xl:p-2">
-            Servicio de 24 Horas al Día
+            Servicio 24 Horas
           </h2>
           <p className="xl:p-2 px-2">
             Con nuestro servicio disponible las{" "}
@@ -55,7 +58,7 @@ const ImgSection = () => {
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row lg:mb-0">
+      <div className="flex flex-col sm:flex-row lg:mb-0" id="trader">
         <div className="w-full flex justify-center rounded-lg basis-2/4 max-h-96 ">
           <img className="object-cover" src={ayuda} alt="img_trader" />
         </div>
