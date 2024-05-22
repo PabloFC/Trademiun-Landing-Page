@@ -1,5 +1,5 @@
 // import grafica from "../assets/img/landing/grafica.png";
-import oro from "../assets/img/landing/oro.jpg";
+import oro from "../assets/img/landing/oro.png";
 import apple2 from "../assets/img/landing/apple2.jpg";
 import petroleo from "../assets/img/landing/petroleo.jpg";
 
@@ -22,7 +22,8 @@ const Blog = () => {
               El precio del Oro se disparó durante la sesión norteamericana
               previa al fin de semana, ya que el par XAU/USD cotizó por encima
               de 2.400$, registrando ganancias de más del 1.5% en medio de la
-              subida de los rendimientos de los bonos del Tesoro estadounidense.
+              subida de los rendimientos de los bonos del Tesoro estadounidense.{" "}
+              <br />
               El metal sin rendimiento amplió su avance y amenazó con romper el
               máximo histórico de 2.431$...
             </p>
@@ -38,7 +39,7 @@ const Blog = () => {
 
         <div className="w-full basis-1/2 xl:ml-8 ">
           <div className="mb-5 w-full basis-1/2  border-2 border-solid rounded-xl">
-            <div className="mb-3">
+            <div className="mb-4">
               <img
                 src={apple2}
                 className="w-full xl:h-[275px]  "
