@@ -1,6 +1,6 @@
 // import grafica from "../assets/img/landing/grafica.png";
 import oro from "../assets/img/landing/oro.jpg";
-import apple from "../assets/img/landing/apple.jpg";
+import apple2 from "../assets/img/landing/apple2.jpg";
 import petroleo from "../assets/img/landing/petroleo.jpg";
 
 const Blog = () => {
@@ -40,8 +40,8 @@ const Blog = () => {
           <div className="mb-5 w-full basis-1/2  border-2 border-solid rounded-xl">
             <div className="mb-3">
               <img
-                src={apple}
-                className="w-full xl:h-[200px]  "
+                src={apple2}
+                className="w-full xl:h-[275px]  "
                 alt="grafica"
               />
             </div>
@@ -64,7 +64,7 @@ const Blog = () => {
             <div className="mb-3">
               <img
                 src={petroleo}
-                className="w-full xl:h-[200px]"
+                className="w-full xl:h-[275px]"
                 alt="grafica"
               />
             </div>
