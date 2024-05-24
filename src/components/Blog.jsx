@@ -55,8 +55,10 @@ const Blog = () => {
                 por su innovación continua, fuerte desempeño financiero y
                 liderazgo en sostenibilidad...
               </p>
-              <div className="flex justify-end text-secundario text-md hover:cursor-pointer mr-4">
-                <p className="mr-12 lg:mr-0 mt-1">Leer más</p>
+              <div className="flex justify-end text-secundario text-md  mr-4">
+                <a href="https://www.revistaeyn.com/empresasymanagement/apple-es-la-firma-mas-respetada-en-estados-unidos-KKEN459157">
+                  Leer más
+                </a>
               </div>
             </div>
           </div>
@@ -79,7 +81,9 @@ const Blog = () => {
                 afectado la oferta mundial...
               </p>
               <div className="flex justify-end text-secundario text-md hover:cursor-pointer mr-4">
-                <p className="mr-12 lg:mr-0 mt-1">Leer más</p>
+                <a href="https://www.mapfream.com/petroleo-alza-tensiones-geopoliticas/">
+                  <button className="mr-12 lg:mr-0 mt-1">Leer más</button>
+                </a>
               </div>
             </div>
           </div>
