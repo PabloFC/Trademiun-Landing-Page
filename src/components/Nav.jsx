@@ -21,34 +21,29 @@ const Nav = () => {
       </div>
       <Navbar.Collapse>
         <Navbar.Link
-          href="#blog"
-          className="hover:!text-secundario text-stone-950 text-md font-bold"
-        >
-          Blog
-        </Navbar.Link>
-        <Navbar.Link
           href="#sobreNosotros"
           className="hover:!text-secundario text-stone-950 text-md font-bold"
         >
           Sobre Nosotros
         </Navbar.Link>
         <Navbar.Link
-          href="#contacto"
+          href="#blog"
           className="hover:!text-secundario text-stone-950 text-md font-bold"
         >
-          Contacto
+          Blog
         </Navbar.Link>
-        <Navbar.Link
-          href="#trader"
-          className="hover:!text-secundario text-stone-950 text-md font-bold"
-        >
-          Conviertete en trader
-        </Navbar.Link>
+
         <Navbar.Link
           href="#faqs"
           className="hover:!text-secundario text-stone-950 text-md font-bold"
         >
           FAQS
+        </Navbar.Link>
+        <Navbar.Link
+          href="#faqs"
+          className="hover:!text-secundario text-stone-950 text-md font-bold xl:hidden"
+        >
+          Login
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
