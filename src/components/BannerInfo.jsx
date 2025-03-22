@@ -15,8 +15,8 @@ const BannerInfo = () => {
   return (
     <section>
       <div className="mx-auto w-full bg-primario py-12 flex flex-col sm:flex-row gap-2 ">
-        {stats.map((stat, index) => (
-          <div key={index} className="basis-1/4">
+        {stats.map((stat) => (
+          <div key={stat.value} className="basis-1/4">
             <h2 className="text-3xl text-center text-secundario font-bold">
               {stat.value}
             </h2>
