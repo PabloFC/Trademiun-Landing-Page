@@ -14,6 +14,25 @@ import nacho from "../assets/img/landing/nacho.jfif";
 import separador from "../assets/img/landing/separador.png";
 
 const Home = () => {
+  const users = [
+    {
+      porcentaje: "225",
+      nombre: "Nacho",
+      foto: nacho,
+    },
+    {
+      porcentaje: "133",
+      nombre: "Izabela",
+      foto: "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    },
+    {
+      porcentaje: "111",
+      nombre: "Alvaro",
+      foto: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80",
+    },
+    { porcentaje: "80", nombre: "Marco", foto: marco },
+    { porcentaje: "87", nombre: "Vero", foto: vero },
+  ];
   return (
     <>
       <Nav />
@@ -53,35 +72,25 @@ const Home = () => {
 
       <div className="hidden lg:flex cards mb-20 ">
         <div className="cards-slide gap-8 ">
-          <TradersCard porcentaje="225" nombre="Nacho" foto={nacho} />
-          <TradersCard
-            porcentaje="133"
-            nombre="Izabela"
-            foto="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-          />
-          <TradersCard
-            porcentaje="111"
-            nombre="Alvaro"
-            foto="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
-          />
-          <TradersCard porcentaje="80" nombre="Marco" foto={marco} />
-          <TradersCard porcentaje="87" nombre="Vero" foto={vero} />
+          {users.map((user) => (
+            <TradersCard
+              key={user.nombre}
+              porcentaje={user.porcentaje}
+              nombre={user.nombre}
+              foto={user.foto}
+            />
+          ))}
         </div>
 
         <div className="cards-slide ml-8 gap-8">
-          <TradersCard porcentaje="225" nombre="Nacho" foto={nacho} />
-          <TradersCard
-            porcentaje="133"
-            nombre="Izabela"
-            foto="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-          />
-          <TradersCard
-            porcentaje="127"
-            nombre="Alvaro"
-            foto="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
-          />
-          <TradersCard porcentaje="80" nombre="Marco" foto={marco} />
-          <TradersCard porcentaje="87" nombre="Vero" foto={vero} />
+          {users.map((user) => (
+            <TradersCard
+              key={user.nombre}
+              porcentaje={user.porcentaje}
+              nombre={user.nombre}
+              foto={user.foto}
+            />
+          ))}
         </div>
       </div>
       <div className="container mx-auto mb-20">
