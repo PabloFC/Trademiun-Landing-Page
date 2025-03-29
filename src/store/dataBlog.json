@@ -5,23 +5,23 @@
           "image":"oro",
           "altText": "foto blog",
           "title": "El precio del Oro apunta a máximos históricos",
-          "description": "El precio del Oro se disparó durante la sesión norteamericana previa al fin de semana, ya que el par XAU/USD cotizó por encima de 2.400$, registrando ganancias de más del 1.5% en medio de la subida de los rendimientos de los bonos del Tesoro estadounidense. El metal sin rendimiento amplió su avance y amenazó con romper el máximo histórico de 2.431$...",
+          "description": "El precio del Oro se disparó durante la sesión norteamericana previa al fin de semana, ya que el par XAU/USD cotizó por encima de 2.400$",
           "link": "https://www.fxstreet.es/news/el-precio-del-oro-supera-el-nivel-2400-apunta-a-maximos-historicos-202405172003"
         },
         {
           "id": 2,
-          "image": "apple2",
+          "image": "nike",
           "altText": "foto blog",
-          "title": "Apple nombrada la mejor empresa estadounidense en 2024",
-          "description": "Apple ha sido nombrada la mejor empresa estadounidense en 2024 por su innovación continua, fuerte desempeño financiero y liderazgo en sostenibilidad...",
-          "link": "https://www.revistaeyn.com/empresasymanagement/apple-es-la-firma-mas-respetada-en-estados-unidos-KKEN459157"
+          "title": "Las acciones de Nike caen a su nivel más bajo en cinco años",
+          "description": "Esta caída se atribuye a la publicación de datos de inflación más altos de lo esperado, lo que genera preocupación en los inversores.",
+          "link": "https://www.fxstreet.es/news/las-acciones-de-nike-caen-a-un-minimo-de-cinco-anos-a-medida-que-el-fuerte-dato-de-inflacion-afectan-los-mercados-202503282303"
         },
         {
           "id": 3,
           "image": "petroleo",
           "altText": "foto blog",
           "title": "El precio del petróleo sube por tensiones en Medio Oriente",
-          "description": "El precio del petróleo crudo subió un 5% hoy debido a las crecientes tensiones geopolíticas en Medio Oriente, que han afectado la oferta mundial...",
+          "description": "El precio del petróleo crudo subió un 5% hoy debido a las crecientes tensiones geopolíticas en Medio Oriente",
           "link": "https://www.mapfream.com/petroleo-alza-tensiones-geopoliticas/"
         }
       ]

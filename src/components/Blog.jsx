@@ -1,11 +1,11 @@
 import articles from "../store/dataBlog.json";
-import oro from "../assets/img/landing/oro.png";
-import apple2 from "../assets/img/landing/apple2.jpg";
-import petroleo from "../assets/img/landing/petroleo.jpg";
+import oro from "../assets/img/blog/oro.png";
+import nike from "../assets/img/blog/nike.jpg";
+import petroleo from "../assets/img/blog/petroleo.jpg";
 
 const images = {
   oro,
-  apple2,
+  nike,
   petroleo,
 };
 
