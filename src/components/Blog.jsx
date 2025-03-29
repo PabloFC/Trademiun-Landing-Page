@@ -3,6 +3,8 @@ import oro from "../assets/img/blog/oro.png";
 import nike from "../assets/img/blog/nike.jpg";
 import petroleo from "../assets/img/blog/petroleo.jpg";
 
+//TODO: AÑADIR FUNCION PARA PONER UN MAXIMO DE PALABRAS EN LA DESCRIPCION
+
 const images = {
   oro,
   nike,
@@ -15,16 +17,16 @@ const Blog = () => {
       <h2 className="text-center text-3xl font-bold mb-20">
         Últimos artículos
       </h2>
-      <div className="flex flex-col sm:flex-row mx-auto justify-center">
+      <div className="flex flex-col sm:flex-row mx-auto justify-center gap-2">
         {articles.articles.map((article) => (
           <div
             key={article.id}
-            className="w-full mb-4 basis-1/2 border-2 border-solid rounded-xl"
+            className="w-full mb-4 border-2 border-solid rounded-xl"
           >
             <div>
               <img
                 src={images[article.image]}
-                className="w-full"
+                className="w-full min-h-48 max-h-60 object-cover"
                 alt={article.altText}
               />
             </div>
