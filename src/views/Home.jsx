@@ -36,81 +36,86 @@ const Home = () => {
   return (
     <>
       <Nav />
-      <div className="mb-20">
-        <HeroSection />
-      </div>
-      <div className="mb-20">
-        <BannerInfo />
-      </div>
+      <main>
+        <section id="hero" className="mb-20">
+          <HeroSection />
+        </section>
+        <section id="banner" className="mb-20">
+          <BannerInfo />
+        </section>
 
-      <div>
-        <h2
-          className="xl:flex justify-center text-center text-4xl font-bold mb-20"
-          id="sobreNosotros"
+        <section id="sobreNosotros" className="mb-20">
+          <h2 className="xl:flex justify-center text-center text-4xl font-bold mb-20">
+            Sobre Nosotros
+          </h2>
+          <div className="container mx-auto">
+            <ImgSection />
+          </div>
+        </section>
+
+        <section
+          id="separador"
+          className="flex justify-center text-center text-4xl font-bold mb-20 "
         >
-          Sobre Nosotros
-        </h2>
-      </div>
+          <img className="w-1/2 xl:w-1/3" src={separador} alt="separador" />
+        </section>
 
-      <div className="container mx-auto mb-20">
-        <ImgSection />
-      </div>
+        <section id="lema" className="container mx-auto mb-20">
+          <Lema />
+        </section>
 
-      <div className="flex justify-center text-center text-4xl font-bold mb-20 ">
-        <img className="w-1/2 xl:w-1/3" src={separador} alt="separador" />
-      </div>
+        <section id="topTraders">
+          <div>
+            <h2 className="hidden xl:flex justify-center text-3xl font-bold mb-20">
+              Top traders
+            </h2>
+          </div>
 
-      <div className="container mx-auto mb-20">
-        <Lema />
-      </div>
+          <div className="hidden lg:flex cards mb-20 ">
+            <div className="cards-slide gap-8 ">
+              {users.map((user) => (
+                <TradersCard
+                  key={user.nombre}
+                  porcentaje={user.porcentaje}
+                  nombre={user.nombre}
+                  foto={user.foto}
+                />
+              ))}
+            </div>
 
-      <div>
-        <h2 className="hidden xl:flex justify-center text-3xl font-bold mb-20">
-          Top traders
-        </h2>
-      </div>
+            <div className="cards-slide ml-8 gap-8">
+              {users.map((user) => (
+                <TradersCard
+                  key={user.nombre}
+                  porcentaje={user.porcentaje}
+                  nombre={user.nombre}
+                  foto={user.foto}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
 
-      <div className="hidden lg:flex cards mb-20 ">
-        <div className="cards-slide gap-8 ">
-          {users.map((user) => (
-            <TradersCard
-              key={user.nombre}
-              porcentaje={user.porcentaje}
-              nombre={user.nombre}
-              foto={user.foto}
-            />
-          ))}
-        </div>
+        <section id="blog" className="container mx-auto mb-20">
+          <Blog />
+        </section>
 
-        <div className="cards-slide ml-8 gap-8">
-          {users.map((user) => (
-            <TradersCard
-              key={user.nombre}
-              porcentaje={user.porcentaje}
-              nombre={user.nombre}
-              foto={user.foto}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="container mx-auto mb-20">
-        <Blog />
-      </div>
+        <section id="CardWhyTrademiun">
+          <div>
+            <h2 className="xl:flex justify-center text-center text-3xl font-bold mb-20 ">
+              ¿Por qué elegir Trademiun?
+            </h2>
+          </div>
 
-      <div>
-        <h2 className="xl:flex justify-center text-center text-3xl font-bold mb-20 ">
-          ¿Por qué elegir Trademiun?
-        </h2>
-      </div>
+          <div className="container mx-auto flex justify-center mb-20">
+            <CardWhyTrademiun />
+          </div>
+        </section>
 
-      <div className="container mx-auto flex justify-center mb-20">
-        <CardWhyTrademiun />
-      </div>
-
-      <div className="container xl:w-1/2 mx-auto mb-20">
-        <Accordeon />
-      </div>
-
+        <section id="Accordeon" className="container xl:w-1/2 mx-auto mb-20">
+          <Accordeon />
+        </section>
+      </main>
       <FooterTrademiun />
     </>
   );
