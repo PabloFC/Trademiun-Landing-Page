@@ -1,7 +1,7 @@
 import movil_hero from "../assets/img/landing/movil_hero.png";
 import AppleButton from "./AppleButton";
 import GoogleButton from "./GoogleButton";
-const Header = () => {
+const HeroSection = () => {
   return (
     <section className="bg-white h-2/4">
       <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-16 lg:grid-cols-12">
@@ -32,4 +32,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeroSection;

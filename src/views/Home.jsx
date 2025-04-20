@@ -1,5 +1,5 @@
 import Nav from "../components/Nav";
-import Header from "../components/Header";
+import HeroSection from "../components/HeroSection";
 import BannerInfo from "../components/BannerInfo";
 import ImgSection from "../components/ImgSection";
 import Lema from "../components/Lema";
@@ -37,7 +37,7 @@ const Home = () => {
     <>
       <Nav />
       <div className="mb-20">
-        <Header />
+        <HeroSection />
       </div>
       <div className="mb-20">
         <BannerInfo />
